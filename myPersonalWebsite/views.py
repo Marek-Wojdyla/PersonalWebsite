@@ -77,5 +77,5 @@ def post_edit(request,pk):
     return render(request, 'myPersonalWebsite/post_edit.html', {'form': form})
 
 
-def footer_date(request):
-    return render(request, 'Footer.html', {'curent_year': datetime.now().year()})
+# def footer_date(request):
+#     return render(request, 'Footer.html', {'curent_year': datetime.now().year()})

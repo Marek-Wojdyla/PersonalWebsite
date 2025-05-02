@@ -1,17 +1,18 @@
+{% load static %}
 <p class="Up-title" >HAVE ANY QUERY</p>
 <p class="Name-package-color About-me-title">Contact ME</p>
 <p class="Name-package-color About-me-subtitle">If you are interested in my services I invite you to fill out the contact form below. Thanks for your trust together we will create amazing things</p>
 <div class="red-line"></div>
 <div class="Contact-packet-for-details">
     <div class="Contact-packet-secend">
-        <div><img class="Contact-image" src="\media\image\Location-icon.png" width="35" alt="Image describe location icon"></div>
+        <div><img class="Contact-image" src="{% static 'media/image/Location-icon.png' %}" width="35" alt="Image describe location icon"></div>
         <div>
             <p class="contact-details">Locate me</p>
             <p class="contact-details">Only online</p>
         </div>
     </div>
     <div class="Contact-packet-secend">
-        <div><img class="Contact-image" src="\media\image\Call-icon.svg" width="35" alt="Image describe call icon"></div>
+        <div><img class="Contact-image" src="{% static 'media/image/Call-icon.svg' %}" width="35" alt="Image describe call icon"></div>
         <div>
             <a class="Contact-link" href="tel:576-204-408">
                 <p class="contact-details">Give me a call</p>
@@ -20,7 +21,7 @@
         </div>
     </div>
     <div class="Contact-packet-secend">
-        <div><img class="Contact-image" src="\media\image\Email-icon.svg" width="35" alt="Image describe Email icon"></div>
+        <div><img class="Contact-image" src="{% static 'media/image/Email-icon.svg' %}" width="35" alt="Image describe Email icon"></div>
         <div>
             <a class="Contact-link" href="mailto:mwojdyla0@gmail.com">
                 <p class="contact-details">Get in online</p>

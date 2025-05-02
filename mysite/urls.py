@@ -25,13 +25,13 @@ from myPersonalWebsite.views import Image, ImageDisplay
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
+    path('', include('myPersonalWebsite.urls')),
     path('image/', Image.as_view(), name='image'),
     path('image/<int:pk>', ImageDisplay.as_view(), name='image_display'),
     path('post/new/', myPersonalWebsite.views.post_new, name='post_new'),
 ]
 
-handler404 = 'blog.views.error_404_view'
+handler404 = 'myPersonalWebsite.views.error_404_view'
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

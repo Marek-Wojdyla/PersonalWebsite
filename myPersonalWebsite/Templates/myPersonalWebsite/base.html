@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -14,7 +15,7 @@
 
     </head>
     <body>
-        {% include 'blog/nav_menu.html' %}
+        {% include 'myPersonalWebsite/nav_menu.html' %}
         <div class="container first-page-mb">
             <div class="Information-package">
 
@@ -26,39 +27,39 @@
                 </div>
 
                 <div class="Photo-package">
-                    <img src="\media\image\my-photo1.png" height="600" alt="Fist Photo">
+                    <img src="{% static 'media/image/my-photo1.png'%}" height="600" alt="Fist Photo">
                 </div>
 
             </div>
         </div>
         <section class="first-color" id="AboutMe">
             <div class="container section-mb">
-                {% include 'blog/about_me.html' %}
+                {% include 'myPersonalWebsite/about_me.html' %}
             </div>
         </section>
         <section class="Skills-section" id="Skills">
             <div class="container">
-                {% include 'blog/Skills.html' %}
+                {% include 'myPersonalWebsite/Skills.html' %}
             </div>
         </section>
         <section class="first-color" id="Services">
             <div class="container section-mb">
-                {% include 'blog/services.html' %}
+                {% include 'myPersonalWebsite/services.html' %}
             </div>
         </section>
        <section id="Projects">
             <div class="container section-mb">
-                {% include 'blog/Projects.html' %}
+                {% include 'myPersonalWebsite/Projects.html' %}
             </div>
        </section>
        <section class="first-color" id="Contact">
             <div class="container section-mb">
-                {% include 'blog/Contact.html' %}
+                {% include 'myPersonalWebsite/Contact.html' %}
             </div>
        </section>
        <section>
             <div class="container">
-                {% include 'blog/Footer.html' %}
+                {% include 'myPersonalWebsite/Footer.html' %}
             </div>
        </section>
 

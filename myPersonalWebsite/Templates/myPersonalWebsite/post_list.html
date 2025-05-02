@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% for post in posts %}
+
+    <p>opublikowany: {{ post.published_date }}</p>
+    <h2><a href="{% url 'post_detail' pk=post.pk %}"> {{ post.title }} </a></h2>
+    {% if post.image %}
+    <img src="{{ post.image.url }}" alt="Opis obrazka" width="200" height="200">
+    {% else %}
+    <p>Obraz niedostępny</p>
+    {% endif %}
+    <em> {{ post.text| linebreaksbr }} </em>
+
+    {% endfor%}
+{% endblock %}

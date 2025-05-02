@@ -1,0 +1,11 @@
+@media (min-width: 1400px){
+    .Skills-img{
+        display: block;
+    }
+    .Skill-track-title{
+        display: none;
+    }
+    .skill-d-a-img{
+        display: block;
+    }
+}

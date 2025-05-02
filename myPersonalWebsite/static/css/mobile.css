@@ -1,0 +1,69 @@
+
+@media (min-width: 390px) {
+    /* Skills */
+
+    .Up-title-mobile{
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .Skills-img{
+        display: none;
+    }
+    .skill-d-a-img{
+        display: none;
+    }
+
+    .Skill-track-title{
+        color: #d23636;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+
+    .first-logo-margin{
+        margin-left: 0;
+    }
+
+    .center-side{
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .space-row{
+        margin-left: 0;
+    }
+
+    /* End SKills */
+
+    /* Services */
+
+    .space-between-card{
+        margin-bottom: 1rem;
+    }
+
+    /* End Services */
+
+    /* About me */
+
+    .About-me-photo{
+        margin-right: 1.5rem;
+    }
+
+    .column-margin{
+        margin-right: 0;
+    }
+
+    /* End About me */
+
+    /* Projects */
+
+
+
+    /* End Projects */
+}
+

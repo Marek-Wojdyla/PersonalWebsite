@@ -1,0 +1,81 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <title>Blog dla programistów</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+        <link rel="stylesheet" href="{% static 'css/big-computer.css' %}">
+
+    </head>
+    <body>
+        {% include 'blog/nav_menu.html' %}
+        <div class="container first-page-mb">
+            <div class="Information-package">
+
+                <div class="Name-package">
+                    <h2 class="Name-package-color Name-size">I am Marek Wojdyła</h2>
+                    <p class="Name-package-color Name-subtext p-pading">I'am Marek profesional web developer with long time passion in this field </p>
+                    <a href="\media\image\MarekWojdyłaCV-2025.pdf" download><button class="Name-package-button-l">My Portfolio</button></a>
+                    <a href="#Projects"><button class="Name-package-button-r">Projects</button></a>
+                </div>
+
+                <div class="Photo-package">
+                    <img src="\media\image\my-photo1.png" height="600" alt="Fist Photo">
+                </div>
+
+            </div>
+        </div>
+        <section class="first-color" id="AboutMe">
+            <div class="container section-mb">
+                {% include 'blog/about_me.html' %}
+            </div>
+        </section>
+        <section class="Skills-section" id="Skills">
+            <div class="container">
+                {% include 'blog/Skills.html' %}
+            </div>
+        </section>
+        <section class="first-color" id="Services">
+            <div class="container section-mb">
+                {% include 'blog/services.html' %}
+            </div>
+        </section>
+       <section id="Projects">
+            <div class="container section-mb">
+                {% include 'blog/Projects.html' %}
+            </div>
+       </section>
+       <section class="first-color" id="Contact">
+            <div class="container section-mb">
+                {% include 'blog/Contact.html' %}
+            </div>
+       </section>
+       <section>
+            <div class="container">
+                {% include 'blog/Footer.html' %}
+            </div>
+       </section>
+
+
+
+
+        <!-- {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="bi bi-plus"></span></a>
+        {% endif %}
+        <h1><a href="/"> Blog dla programistów </a> </h1>
+
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>

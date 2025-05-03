@@ -43,7 +43,7 @@ def post_detail(request, pk):
     return render(request, 'myPersonalWebsite/post_detail.html', {'post': post})
 
 
-def error_404_view(request):
+def error_404_view(request, exception):
     data = {'name': 'Blog dla programistów'}
     return render(request, 'myPersonalWebsite/404.html', data)
 

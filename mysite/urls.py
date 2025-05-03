@@ -24,8 +24,8 @@ import myPersonalWebsite.views
 from myPersonalWebsite.views import Image, ImageDisplay
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', include('myPersonalWebsite.urls')),
+    path('admin/', admin.site.urls),
     path('image/', Image.as_view(), name='image'),
     path('image/<int:pk>', ImageDisplay.as_view(), name='image_display'),
     path('post/new/', myPersonalWebsite.views.post_new, name='post_new'),

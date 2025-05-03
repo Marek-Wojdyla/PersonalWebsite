@@ -10,7 +10,6 @@ from django.views.generic import TemplateView
 from datetime import datetime
 
 
-
 class Image(TemplateView):
     form = PostForm
     template_name = 'myPersonalWebsite/image.html'
@@ -44,7 +43,7 @@ def post_detail(request, pk):
     return render(request, 'myPersonalWebsite/post_detail.html', {'post': post})
 
 
-def error_404_view(request, exception):
+def error_404_view(request):
     data = {'name': 'Blog dla programistów'}
     return render(request, 'myPersonalWebsite/404.html', data)
 
@@ -62,7 +61,8 @@ def post_new(request):
         form = PostForm()
     return render(request, 'myPersonalWebsite/post_edit.html', {'form': form})
 
-def post_edit(request,pk):
+
+def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES, instance=post)
@@ -75,7 +75,6 @@ def post_edit(request,pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'myPersonalWebsite/post_edit.html', {'form': form})
-
 
 # def footer_date(request):
 #     return render(request, 'Footer.html', {'curent_year': datetime.now().year()})
